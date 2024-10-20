@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "migrate": "npx node-pg-migrate up -f migrations/migrate.js",
+    "migrate:down": "npx node-pg-migrate down -f migrations/migrate.js"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.7.7",
+    "@types/pg": "^8.11.10",
+    "esbuild-register": "^3.6.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.675.0",
+    "aws-sdk": "^2.1691.0",
+    "dotenv": "^16.4.5",
+    "node-pg-migrate": "^7.7.1",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4"
+  }
+}
